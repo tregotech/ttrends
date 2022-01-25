@@ -4,7 +4,7 @@ import time
 import numpy as np
 import pandas as pd
 
-class search_trends():
+class Trends():
     def __init__(self, geo='GB', gprop='',cat=0, years=5):
         self.pytrend = TrendReq(hl='en-US', tz=360)
         self.params  = {'gprop': gprop, 'geo': geo, 'timeframe': 'today {}-y'.format(years)}
