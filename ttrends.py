@@ -39,12 +39,13 @@ class Trends:
     def get_trends(self, kw_list):
         if len(kw_list) > 5:
             result = self.chunkwise_trends(kw_list)
+            result = self.improve_signal()
         else:
             result = self.api_call_trends(kw_list)
         return result
 
     def improve_signal(self):
-        return self.get_trends(self.KW_LIST_REORDERED)
+        return self.chunkwise_trends(self.KW_LIST_REORDERED)
 
     def chunkwise_trends(self, kw_list):
         def rescale_chunks(df_list):
