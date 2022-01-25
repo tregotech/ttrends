@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pytrends = "4.4.0"
+
 
 [dev-packages]
 
