@@ -1,5 +1,9 @@
 # ttrends
- 
+
+Python library to extract Google search trends for >5 keywords. Built on top of [Pytrends](https://pypi.org/project/pytrends/).
+
+Check out a GUI / App [here](https://github.com/tregotech/ttrends-streamlit). 
+
 ## Usage 
 ```python
 >>> from ttrends import Trends
